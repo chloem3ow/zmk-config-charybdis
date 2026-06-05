@@ -175,7 +175,7 @@
         combo_gaming_toggle {
             timeout-ms = <50>;
             key-positions = <49 55 54>;
-            bindings = <&tog GAMING>;
+            bindings = <&tog 0>;
         };
     };
 
@@ -200,6 +200,8 @@
   &trans  &trans          &trans             &trans           &trans    &trans  &trans        &trans        &trans        &bootloader
                           &trans             &trans           &trans    &trans  &trans
             >;
+
+            label = "MEDIA";
         };
 
         Nav {
@@ -209,6 +211,8 @@
   &trans        &trans        &trans            &trans          &trans    &trans      &trans     &trans       &trans     &trans
                               &trans            &trans          &trans    &kp DELETE  &trans
             >;
+
+            label = "NAV";
         };
 
         Syms {
@@ -218,6 +222,8 @@
   &kp EXCL   &kp AT            &kp HASH               &kp DOLLAR        &kp PERCENT             &trans  &trans  &trans  &trans  &trans
                                &kp RIGHT_PARENTHESIS  &kp TILDE         &kp LEFT_PARENTHESIS    &trans  &trans
             >;
+
+            label = "SYMBOLS";
         };
 
         Num {
@@ -227,6 +233,8 @@
   &trans  &kp N1  &kp N2          &kp N3        &kp EQUAL    &trans  &trans      &trans     &trans         &trans
                   &kp UNDERSCORE  &trans        &kp N0       &trans  &trans
             >;
+
+            label = "NUMBERS";
         };
 
         Func {
@@ -236,6 +244,8 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans
             >;
+
+            label = "FUNCTION";
         };
 
         Mouse {
@@ -245,15 +255,8 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans
             >;
-        };
 
-        layer_7 {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
-            >;
+            label = "MOUSE";
         };
     };
 };
