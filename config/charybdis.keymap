@@ -5,6 +5,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&tl {
+    input-processor = <&zip_scroll_scaler 2-3 2-3>;
+};
+
 / {
     chosen { zmk,physical-layout = &charybdis_6col_layout; };
 };
@@ -24,13 +28,13 @@
 // Layer definitions
 
 #define BASE 0
-#define POINTER 1
-#define LOWER 2
-#define RAISE 3
-#define SYMBOLS 4
-#define SCROLL 5
-#define SNIPING 6
-#define GAMING 7
+#define MEDIA 1
+#define NAV 2
+#define SYMBOLS 3
+#define NUMBERS 4
+#define FUNCTION 5
+#define MOUSE 6
+#define SCROLL 7
 
 / {
     behaviors {
