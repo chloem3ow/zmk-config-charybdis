@@ -22,6 +22,7 @@
 };
 
 // Layer definitions
+
 #undef SYMBOLS
 #undef SCROLL
 
@@ -180,14 +181,15 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         Base {
             label = "BASE";
             display-name = "Base";
             bindings = <
-  &kp Q            &kp W            &kp E         &kp R          &kp T          &kp Y            &kp U          &kp I         &kp O             &kp P
-  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml F LSHIFT  &kp G          &kp H            &hmr LSHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI
-  &lt 6 Z          &kp X            &kp C         &kp V          &kp B          &kp N            &kp M          &kp COMMA     &kp DOT           &lt 6 SLASH
-                                    &lt 5 TAB     &lt 1 ESC      &lt 2 SPACE    &lt 4 BACKSPACE  &lt 3 ENTER
+  &kp Q            &kp W            &kp E         &kp R         &kp T          &kp Y            &kp U          &kp I         &kp O             &kp P
+  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LSHFT F  &kp G          &kp H            &hmr LSHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI
+  &lt 6 Z          &kp X            &kp C         &kp V         &kp B          &kp N            &kp M          &kp COMMA     &kp DOT           &lt 6 SLASH
+                                    &lt 5 TAB     &lt 1 ESC     &lt 2 SPACE    &lt 4 BACKSPACE  &lt 3 ENTER
             >;
         };
 
@@ -246,15 +248,6 @@
         };
 
         layer_7 {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_8 {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
