@@ -183,7 +183,7 @@
         compatible = "zmk,keymap";
 
         Base {
-            label = "BASE";
+            label = "Base";
             display-name = "Base";
             bindings = <
   &kp Q            &kp W            &kp E         &kp R         &kp T          &kp Y            &kp U          &kp I         &kp O             &kp P
@@ -201,7 +201,7 @@
                           &trans             &trans           &trans    &trans  &trans
             >;
 
-            label = "MEDIA";
+            label = "Media";
         };
 
         Nav {
@@ -212,7 +212,7 @@
                               &trans            &trans          &trans    &kp DELETE  &trans
             >;
 
-            label = "NAV";
+            label = "Nav";
         };
 
         Syms {
@@ -223,7 +223,7 @@
                                &kp RIGHT_PARENTHESIS  &kp TILDE         &kp LEFT_PARENTHESIS    &trans  &trans
             >;
 
-            label = "SYMBOLS";
+            label = "Symbols";
         };
 
         Num {
@@ -234,7 +234,7 @@
                   &kp UNDERSCORE  &trans        &kp N0       &trans  &trans
             >;
 
-            label = "NUMBERS";
+            label = "Numbers";
         };
 
         Func {
@@ -245,7 +245,7 @@
                   &trans  &trans  &trans    &trans  &trans
             >;
 
-            label = "FUNCTION";
+            label = "Function";
         };
 
         Mouse {
@@ -256,7 +256,7 @@
                   &trans  &trans  &trans    &trans  &trans
             >;
 
-            label = "MOUSE";
+            label = "Mouse";
         };
     };
 };
