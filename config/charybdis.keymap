@@ -238,10 +238,10 @@
 
         Func {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans      &kp F7  &kp F8  &kp F9  &kp F12
+  &trans  &trans  &trans  &trans  &trans    &trans      &kp F4  &kp F5  &kp F6  &kp F11
+  &trans  &trans  &trans  &trans  &trans    &caps_word  &kp F1  &kp F2  &kp F3  &kp F10
+                  &trans  &trans  &trans    &trans      &trans
             >;
 
             label = "Function";
@@ -249,10 +249,10 @@
 
         Mouse {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
+  &trans  &trans  &trans     &trans     &trans       &trans    &trans    &trans  &trans  &trans
+  &trans  &trans  &trans     &trans     &trans       &trans    &trans    &trans  &trans  &trans
+  &trans  &trans  &trans     &trans     &trans       &trans    &trans    &trans  &trans  &trans
+                  &mkp RCLK  &mkp MCLK  &mkp LCLK    &mkp MB5  &mkp MB4
             >;
 
             label = "Mouse";
