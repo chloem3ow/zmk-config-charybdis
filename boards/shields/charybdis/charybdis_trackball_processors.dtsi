@@ -17,11 +17,15 @@
 // Standard trackball processing configuration
 // Can be used in both standalone (trackball_listener) and dongle mode (input_split_listener)
 #define CHARYBDIS_TRACKBALL_PROCESSORS \
-    snipe { \
-        layers = <SNIPING>; \
-        input-processors = <&zip_xy_scaler 1 3>; \
+        move { \
+        layers = <BASE>; \
+        input-processors = <&zip_xy_scaler 1 2>; \
     }; \
     \
+    mouse { \
+        layers = <POINTER>; \
+        input-processors = <&zip_xy_scaler 1 4>; \  // slower on mouse layer
+    };    
     scroll { \
         layers = <SCROLL>; \
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 40>, <&zip_xy_to_scroll_mapper>; \
