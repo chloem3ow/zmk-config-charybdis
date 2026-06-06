@@ -18,7 +18,7 @@
 // Can be used in both standalone (trackball_listener) and dongle mode (input_split_listener)
 #define CHARYBDIS_TRACKBALL_PROCESSORS \
     move { \
-        layers = <BASE MOUSE>; \
+        layers = <MOUSE>; \
         input-processors = <&zip_xy_scaler 1 2>; \
     }; \
     scroll { \
