@@ -167,12 +167,14 @@
 
         Bootloader-left {
             bindings = <&bootloader>;
-            key-positions = <0 20 10 21 11 1>;
+            key-positions = <30 32 24>;
+            timeout-ms = <40>;
         };
 
         Bootloader-right {
             bindings = <&bootloader>;
-            key-positions = <8 18 28 29 19 9>;
+            key-positions = <34 33 25>;
+            timeout-ms = <40>;
         };
     };
 
