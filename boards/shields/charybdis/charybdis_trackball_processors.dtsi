@@ -15,11 +15,10 @@
 #include <input/processors.dtsi>
 
 // Standard trackball processing configuration
-// Can be used in both standalone (trackball_listener) and dongle mode (input_split_listener)
 #define CHARYBDIS_TRACKBALL_PROCESSORS \
     move { \
         layers = <BASE MOUSE>; \
-        input-processors = <&zip_xy_scaler 1 2>; \
+        input-processors = <&zip_xy_scaler 1 2>, <&zip_xy_accelerator 2 100 1000>; \
     }; \
     scroll { \
         layers = <SCROLL>; \
